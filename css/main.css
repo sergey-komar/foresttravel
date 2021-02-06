@@ -1,0 +1,343 @@
+/*font-family: 'Lobster', cursive;
+font-family: 'PT Sans', sans-serif;*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 50px;
+  height: 800px;
+  background-color: #265847;
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header-inner{
+   display: flex; 
+   align-items:center; 
+  height: 100px;
+   background-color: #265847;
+  background-image:url('../img/header-page.jpg');
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  
+ 
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__nav-link {
+  font-size: 22px;
+}
+
+.header__contant {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1170px;
+  text-align: center;
+}
+.header__title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.header__contant p {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.header_scroll {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 34px;
+  font-size: 16px;
+}
+
+.header_scroll::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/arrow-down.svg");
+}
+
+/*main*/
+
+.main {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.main__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.main__row:last-child {
+  margin-bottom: 0;
+}
+
+.main__row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.main__contant {
+  max-width: 470px;
+}
+
+.main__img {
+  max-width: 570px;
+}
+
+.main__header {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 54px;
+  color: #31405b;
+}
+
+.main__contant-text {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #31405b;
+}
+
+.main__contant-text p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.button {
+  padding: 12px 40px;
+  background: #0ac883;
+  box-shadow: 0px 8px 20px rgba(24, 219, 148, 0.35);
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main__contant-link {
+  color: #138ece;
+  text-decoration: underline;
+}
+
+/*footer*/
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: #265847;
+}
+
+.footer__widget-link:hover {
+  text-decoration: underline;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__widgets-wrapper {
+  display: flex;
+}
+
+.footer__copyright {
+  width: 270px;
+}
+
+.footer__copyright p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer__logo {
+  margin-bottom: 26px;
+}
+
+.footer__widget + .footer__widget {
+  margin-left: 30px;
+}
+
+.footer__widget-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.footer__widget-info {
+  width: 170px;
+}
+
+.footer__widget-services,
+.footer__widget-contact {
+  width: 270px;
+}
+
+.footer__widget-list {
+  font-size: 18px;
+}
+
+.footer__widget-list li {
+  margin-bottom: 15px;
+}
+
+
+
+
+/*inner page tours*/
+.inner__page-tours{
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.inner__page-tours-header{
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.card__block-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card__title-wrapper {
+  display: flex;
+  align-items:center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 80px;
+  background-color: #A6A6A6;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card__title-wrapper-sand{
+  background-color: #C1B19B;
+}
+
+.card__title {
+  font-size: 28px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 570px;
+}
+
+.card__block-column {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card__block-column-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__block-column-hiking{
+  margin-top: 30px;
+}
+
+.img__adventure,
+.img__hiking {
+  width: 670px;
+}
+ 
+.img__jungle {
+  width: 470px;
+}
+
+.card__title-wrapper-blue{
+  background-color:#66B0BE;
+}
+
+.card__title-wrapper-brown{
+  background-color: #876F56;;
+}
+
+.card__title-wrapper-green{
+  background-color: #27695E;
+}
